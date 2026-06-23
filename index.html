@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de Encuesta</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Welcome to our Survey Form. <br>Please fill the textfields below.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter Your Name: <input id="name" type="text" placeholder="Pedro Sanchez" required></label>
 
+        <label id="email-label">Enter Your Email <input id="email" type="email" placeholder="example@gmail.com" value="example@gmail.com" required></label>
+
+        <label id="number-label">Enter Your Age <input id="number" type="number" min="14" max="120" placeholder="min age 14"></label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          What's your Region
+          <select id="dropdown">
+            <option>(select a option)</option>
+            <option>Valparaiso</option>
+            <option>Region Metropolitana</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Male or Female?</legend>
+        <label>Male <input name="gender-type" type="radio" value="1"></label>
+        <label>Female <input name="gender-type" type="radio" value="2"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What more would you like to see in our services?</legend>
+        <label>Faster Support <input name="calification" type="checkbox" value="1"></label>
+        <label>Quality Control <input name="calification" type="checkbox" value="2"></label>
+        <label>Better Personal <input name="calification" type="checkbox" value="3"></label>
+      </fieldset>
+
+      <fieldset>
+        <lebel>
+          Something more that you would like to add?
+          <textarea></textarea>
+        </lebel>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+    <!-- ESTO LO HICE YO, NO LE PREGUNTE A NINGUNA IA. A PROPOSITO DISCULPAS POR EL MAL INGLES TODAVIA ESTOY APRENDIENDO -->
+  </body>
+</html>
